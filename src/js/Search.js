@@ -3,7 +3,7 @@ function Search({ searchValue, setSearchValue }) {
     return (
         <input
             className="TodoSearch"
-            placeholder="Cortar Cebolla"
+            placeholder=" Buscar la tarea"
             value={searchValue}
             onChange={(event) => {
                 setSearchValue(event.target.value);
