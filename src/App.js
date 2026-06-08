@@ -62,7 +62,7 @@ function App() {
   });
 
   
-  
+
   const completedTasks = (text) => {
     const newTasks = [...tasks_m];
     const indexTasks = newTasks.findIndex(tasks_m => tasks_m.text === text);
@@ -74,6 +74,7 @@ function App() {
 
     try {
 
+      
       await fetch(API_URL, {
         method: 'DELETE',
         headers: {
